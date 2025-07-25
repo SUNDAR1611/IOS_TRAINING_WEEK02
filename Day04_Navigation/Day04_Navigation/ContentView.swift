@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    let names = ["sundar", "praveen", "sonu", "Daniel", "John"]
+    let names = ["sundar", "praveen", "sonu", "Daniel", "John" , "David","carlos"]
+    
 
     var body: some View {
         NavigationStack {
@@ -16,7 +17,9 @@ struct ContentView: View {
                 NavigationLink(destination: GreetingDetailView(name: name)) {
                     Text(name)
                 }
+                
             }
+             
             .navigationTitle("Name List")
         }
     }

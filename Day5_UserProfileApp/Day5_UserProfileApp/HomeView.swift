@@ -11,12 +11,18 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
+                Image(systemName: "person.crop.circle.fill")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+
                 Text("Welcome to the Profile App")
-                    .font(.largeTitle)
+                    .font(.title)
+                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
 
                 NavigationLink(destination: ProfileView()) {
-                    Text("View Profile")
+                    Text(" + Add Profile")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.blue)

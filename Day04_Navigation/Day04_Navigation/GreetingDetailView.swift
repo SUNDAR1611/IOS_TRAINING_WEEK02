@@ -21,12 +21,30 @@ struct GreetingDetailView: View {
                 .frame(width: 100, height: 100)
                 .foregroundColor(.blue)
 
-            Spacer()
+            Text("developer")
+                .font(.subheadline)
+                .foregroundColor(.gray)
+
+            VStack {
+                HStack {
+                    Image(systemName: "link")
+                        .foregroundColor(Color.blue)
+                    
+                    Text("linkedin.com/in/\(name)")
+                        .gridCellAnchor(.bottom)
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+                
+                    Spacer()
+            
+            }
         }
         .padding()
         .navigationTitle("Greeting")
     }
 }
+
 
 #Preview {
     GreetingDetailView(name: "Preview")
