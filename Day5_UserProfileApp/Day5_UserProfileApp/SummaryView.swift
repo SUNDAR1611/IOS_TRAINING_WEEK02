@@ -101,7 +101,6 @@ struct SummaryView: View {
             isActive: true,
             age: "28",
             designation: "iOS Developer",
-            department: "Engineering",
             location: "Chennai"
         ),
         imageData: nil
